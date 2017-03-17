@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>java script 2</title>
+
+	<style>
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(47, 72, 144);
+}
+.input{
+    display: block;
+    padding: 5px 5px;
+    border: 1px solid #04091d;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+.button{
+    display: block;
+    margin: 15px auto;
+    width: 150px;
+    padding: 7px;
+    text-transform: capitalize;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    color: #2c2020;
+}
+</style>
+
+
+
+
+</head>
+
+
+<body>
+
+<h1>Enter Number:</h1>
+
+<form NAME="formlebel" ACTION="" METHOD="GET">
+       <input TYPE="text" NAME="inputbox" VALUE="" class="input" placeholder="Number">
+       <input TYPE="button" NAME="button1" Value="click" onClick="clickbutton(this.form)" class="button">
+</form>
+
+<script>
+	
+	function clickbutton (form) {
+    var i =form.inputbox.value;
+    
+if(i>=1&&i<=100)
+{
+	 if (i%2 == 0)
+{
+    alert("even");
+}
+else
+{
+     alert("odd");
+}
+}
+else 
+alert("out of range");
+}
+</script>
+</body>
+</html>
